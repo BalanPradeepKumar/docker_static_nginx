@@ -1,0 +1,54 @@
+### Node ###
+# Logs
+logs
+*.log
+npm-debug.log*
+
+
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+
+# Dependency directory
+# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
+node_modules
+
+# Optional npm cache directory
+.npm
+
+### Bower ###
+bower_components
+.bower-cache
+.bower-registry
+.bower-tmp
+
+
+### OSX ###
+.DS_Store
+
+### grunt ###
+# Grunt usually compiles files inside this directory
+dist/
+
+# Grunt usually preprocesses files such as coffeescript, compass... inside the .tmp directory
+.tmp/
+
+
+### SublimeText ###
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+
+# sftp configuration file
+sftp-config.json
+
+
+### Code ###
+# Visual Studio Code - https://code.visualstudio.com/
+.settings/
+.vscode/

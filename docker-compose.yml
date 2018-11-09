@@ -1,0 +1,12 @@
+web:
+  image: nginx
+  restart: always
+  volumes:
+   - ./nginx-config/web.conf:/etc/nginx/conf.d/web.conf
+   - ./sample_web_app:/usr/share/nginx/sample_web_app
+  ports:
+   - "8080:80"
+  environment:
+   - NGINX_HOST=localhost
+   - NGINX_PORT=80
+  command: /bin/bash -c "envsubst < /etc/nginx/conf.d/web.conf > /etc/nginx/conf.d/default.conf && exec nginx -g 'daemon off;'"
